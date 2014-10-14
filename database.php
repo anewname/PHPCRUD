@@ -3,7 +3,7 @@
 	{
 		private static $dbName = 'address_book';
 		private static $dbHost = 'localhost';
-		private static $dbUserName = 'root';
+		private static $dbUsername = 'root';
 		private static $dbUserPassword = 'apple610';
 		
 		private static $cont = null;
@@ -19,7 +19,7 @@
        	{     
         		try
         		{
-          		self::$cont =  new PDO( "mysql:host=".self::$dbHost.";"."dbname=".self::$dbName, self::$dbUserName, self::$dbUserPassword); 
+          		self::$cont =  new PDO( "mysql:host=".self::$dbHost.";"."dbname=".self::$dbName, self::$dbUsername, self::$dbUserPassword); 
         		}
         		catch(PDOException $e)
         		{
